@@ -1,26 +1,14 @@
+import { SignUp } from "@clerk/clerk-react";
 import React from "react";
 
-const SignUp: React.FC = () => {
+const SignUpPage: React.FC = () => {
   return (
-    <div>
-      <h1>Sign Up</h1>
-      <form>
-        <div>
-          <label htmlFor="username">Username:</label>
-          <input type="text" id="username" name="username" required />
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div>
-          <label htmlFor="password">Password:</label>
-          <input type="password" id="password" name="password" required />
-        </div>
-        <button type="submit">Sign Up</button>
-      </form>
+    <div className="flex flex-col items-center h-full justify-center">
+      <div className="mt-[-60px]">
+        <SignUp path="/sign-up" signInUrl="/sign-in" />
+      </div>
     </div>
   );
 };
 
-export default SignUp;
+export default SignUpPage;
