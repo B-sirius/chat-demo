@@ -25,10 +25,20 @@ const RootLayout = () => {
   return (
     <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
       <div className="bg-black text-white h-screen flex flex-col">
-        <header className="h-[60px] flex items-center justify-between bg-gray-800 px-4 shrink-0">
+        <header className="h-[60px] flex items-center justify-between px-4 shrink-0">
+          {/* logo and title */}
           <Link to="/">
-            <span>LAMA AI</span>
+            <div className="flex items-center">
+              <img
+                alt="logo"
+                className="mr-[10px]"
+                width={30}
+                src="/logo.png"
+              />
+              <span className="font-bold">LAMA AI</span>
+            </div>
           </Link>
+          {/* user */}
           <div>
             <SignedOut>
               <SignInButton />
@@ -38,7 +48,7 @@ const RootLayout = () => {
             </SignedIn>
           </div>
         </header>
-        <main className="grow">
+        <main className="relative grow overflow-scroll">
           <Outlet />
         </main>
       </div>
