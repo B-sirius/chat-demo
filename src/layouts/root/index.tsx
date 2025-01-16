@@ -25,7 +25,7 @@ const RootLayout = () => {
   return (
     <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
       <div className="bg-black text-white h-screen flex flex-col">
-        <header className="h-[60px] flex items-center justify-between px-4 shrink-0">
+        <header className="h-[60px] flex items-center justify-between px-[50px] shrink-0">
           {/* logo and title */}
           <Link to="/">
             <div className="flex items-center">

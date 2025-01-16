@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         black: "#090815",
+        dashboard: "#100F1E",
         dark: "#140e2d",
       },
       animation: {

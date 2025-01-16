@@ -1,3 +1,4 @@
+import Menu from "@/components/menu";
 import { useAuth } from "@clerk/clerk-react";
 import { useEffect } from "react";
 import { Outlet, useNavigate } from "react-router";
@@ -18,8 +19,8 @@ const DashboardLayout = () => {
 
   return (
     <div className="h-full flex">
-      <div className="bg-gray-600 p-4">MENU</div>
-      <div>
+      <Menu />
+      <div className="bg-dashboard grow p-4">
         <Outlet />
       </div>
     </div>
