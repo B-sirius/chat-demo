@@ -20,7 +20,7 @@ const DashboardLayout = () => {
   return (
     <div className="h-full flex">
       <Menu />
-      <div className="bg-dashboard grow p-4">
+      <div className="bg-dashboard grow">
         <Outlet />
       </div>
     </div>

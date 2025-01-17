@@ -42,7 +42,7 @@ const Menu = () => {
       <SubMenu
         title="RECENT CHATS"
         menuList={[
-          { title: "My chat title", url: "/" },
+          { title: "My chat title", url: "/dashboard/chats/123" },
           { title: "My chat title", url: "/" },
           { title: "My chat title", url: "/" },
           { title: "My chat title", url: "/" },
